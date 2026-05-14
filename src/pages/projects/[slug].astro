@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project }
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const subject = encodeURIComponent(project.data.inquirySubject);
+---
+<BaseLayout
+  title={`${project.data.title} Case Study | Musa Ibrahim`}
+  description={`Case study for ${project.data.title.toLowerCase()} by Musa Ibrahim.`}
+  image={project.data.image}
+  htmlClass="case-study-page"
+  bodyClass="case-study-page"
+>
+  <header class="subpage-header">
+    <div class="container subpage-nav">
+      <a href="/">&larr; Back to portfolio</a>
+      <a href={`mailto:musabish98@gmail.com?subject=${subject}`}>Discuss this type of project</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="case-study-hero">
+      <div class="case-study-hero-grid">
+        <div>
+          <p class="eyebrow">{project.data.eyebrow}</p>
+          <h1>{project.data.title}</h1>
+          <p>{project.data.description}</p>
+          <ul class="tag-list">
+            {project.data.tags.map((tag) => <li>{tag}</li>)}
+          </ul>
+        </div>
+        <img src={project.data.image} alt={project.data.alt} loading="lazy" decoding="async" width="900" height="620">
+      </div>
+    </section>
+
+    <section class="case-study-layout">
+      <div class="case-study-content">
+        <article class="case-study-panel rich-content">
+          <Content />
+        </article>
+      </div>
+
+      <aside class="meta-stack">
+        <div>
+          <strong>Role</strong>
+          <p>{project.data.role}</p>
+        </div>
+        <div>
+          <strong>Focus</strong>
+          <p>{project.data.focus}</p>
+        </div>
+        <div>
+          <strong>Status</strong>
+          <p>{project.data.status}</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+</BaseLayout>

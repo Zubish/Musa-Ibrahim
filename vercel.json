@@ -1,4 +1,41 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/projects/project-one.html",
+      "destination": "/projects/landing-page-concept",
+      "permanent": true
+    },
+    {
+      "source": "/projects/project-two.html",
+      "destination": "/projects/interface-system-concept",
+      "permanent": true
+    },
+    {
+      "source": "/projects/project-three.html",
+      "destination": "/projects/responsive-showcase-concept",
+      "permanent": true
+    },
+    {
+      "source": "/writing/clarity-in-interfaces.html",
+      "destination": "/writing/clarity-in-interfaces",
+      "permanent": true
+    },
+    {
+      "source": "/writing/mobile-first-storytelling.html",
+      "destination": "/writing/mobile-first-storytelling",
+      "permanent": true
+    },
+    {
+      "source": "/writing/accessibility-is-a-trust-signal.html",
+      "destination": "/writing/accessibility-is-a-trust-signal",
+      "permanent": true
+    },
+    {
+      "source": "/writing/from-template-to-portfolio.html",
+      "destination": "/writing/from-template-to-portfolio",
+      "permanent": true
+    }
+  ]
 }

@@ -600,6 +600,7 @@ textarea:focus{
 .case-study-page,
 .article-page{
   background:var(--page-bg);
+  padding-top:0;
 }
 
 .subpage-header{
@@ -695,6 +696,24 @@ textarea:focus{
 .article-content p,
 .case-study-content p{
   color:var(--muted);
+}
+
+.rich-content h2{
+  margin:0 0 12px;
+  font-size:1.45rem;
+}
+
+.rich-content h2:not(:first-child){
+  margin-top:28px;
+}
+
+.rich-content p{
+  margin:0 0 16px;
+  color:var(--muted);
+}
+
+.rich-content p:last-child{
+  margin-bottom:0;
 }
 
 a:focus-visible,
