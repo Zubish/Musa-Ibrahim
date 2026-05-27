@@ -19,8 +19,8 @@ role: "Front-end developer and UI designer"
 focus: "Hierarchy, responsiveness, and call-to-action clarity"
 status: "Ready for live demo and repository links"
 inquirySubject: "Landing Page Project Inquiry"
-featured: true
-order: 1
+featured: false
+order: 2
 ---
 
 ## The goal

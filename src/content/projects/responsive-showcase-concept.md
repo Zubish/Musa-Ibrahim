@@ -19,7 +19,7 @@ focus: "Mobile-first refinement and interface flow"
 status: "Ready for final production context"
 inquirySubject: "Responsive Showcase Project Inquiry"
 featured: false
-order: 3
+order: 4
 ---
 
 ## The goal
