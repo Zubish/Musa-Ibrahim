@@ -17,6 +17,8 @@ const projects = defineCollection({
     role: z.string(),
     focus: z.string(),
     status: z.string(),
+    liveUrl: z.string().url().optional(),
+    repoUrl: z.string().url().optional(),
     inquirySubject: z.string(),
     featured: z.boolean().default(false),
     order: z.number().int().nonnegative().default(0)

@@ -19,6 +19,8 @@ cardDescription: "A pharmacy workspace that combines FEFO inventory, POS checkou
 role: "Product builder, front-end developer, and UI systems designer"
 focus: "Operational UX, inventory workflows, role-aware interfaces, and trustworthy pharmacy records"
 status: "Active product build with landing page, app shell, serverless API routes, and deployment workflow"
+liveUrl: "https://rxledger.vercel.app"
+repoUrl: "https://github.com/Zubish/RxLedger"
 inquirySubject: "RxLedger Project Inquiry"
 featured: true
 order: 1

@@ -19,6 +19,8 @@ cardDescription: "A transaction-protection app for buyer and seller workflows, w
 role: "Product builder, front-end developer, and full-stack workflow designer"
 focus: "Trust-building UI, protected transaction flows, payment boundaries, wallet UX, and buyer/seller state clarity"
 status: "Live MVP with static frontend screens, Node API routes, Postgres-ready persistence, and Vercel deployment support"
+liveUrl: "https://black-crow-rosy.vercel.app"
+repoUrl: "https://github.com/Zubish/BlackCrow"
 inquirySubject: "BlackCrow Project Inquiry"
 featured: false
 order: 2

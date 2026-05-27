@@ -19,6 +19,8 @@ cardDescription: "A civic reporting platform with live feed filters, role-based 
 role: "Product builder, front-end developer, and full-stack application designer"
 focus: "Civic reporting UX, role-aware dashboards, verification flows, mobile field capture, and public-interest information design"
 status: "Live full-stack build with Next.js, API routes, PWA support, local seed data, and Neon/Postgres production persistence"
+liveUrl: "https://vision-echo.vercel.app"
+repoUrl: "https://github.com/Zubish/vision-echo"
 inquirySubject: "VisionEcho Project Inquiry"
 featured: false
 order: 3

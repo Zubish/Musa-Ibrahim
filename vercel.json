@@ -4,17 +4,17 @@
   "redirects": [
     {
       "source": "/projects/project-one.html",
-      "destination": "/projects/landing-page-concept",
+      "destination": "/projects/rxledger-pharmacy-operations",
       "permanent": true
     },
     {
       "source": "/projects/project-two.html",
-      "destination": "/projects/interface-system-concept",
+      "destination": "/projects/blackcrow-escrow",
       "permanent": true
     },
     {
       "source": "/projects/project-three.html",
-      "destination": "/projects/responsive-showcase-concept",
+      "destination": "/projects/visionecho-live",
       "permanent": true
     },
     {

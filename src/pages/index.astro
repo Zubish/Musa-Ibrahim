@@ -111,6 +111,12 @@ const personJsonLd = {
             </ul>
             <div class="action-row">
               <a class="button button-primary" href={`/projects/${featuredProject.id}`}>Read case study</a>
+              {featuredProject.data.liveUrl && (
+                <a class="button button-secondary" href={featuredProject.data.liveUrl} target="_blank" rel="noopener noreferrer">View live project</a>
+              )}
+              {featuredProject.data.repoUrl && (
+                <a class="button button-ghost" href={featuredProject.data.repoUrl} target="_blank" rel="noopener noreferrer">GitHub repo</a>
+              )}
             </div>
           </div>
         </article>
@@ -137,6 +143,12 @@ const personJsonLd = {
               </ul>
               <div class="card-links">
                 <a href={`/projects/${project.id}`}>Case study</a>
+                {project.data.liveUrl && (
+                  <a href={project.data.liveUrl} target="_blank" rel="noopener noreferrer">Live project</a>
+                )}
+                {project.data.repoUrl && (
+                  <a href={project.data.repoUrl} target="_blank" rel="noopener noreferrer">Repo</a>
+                )}
               </div>
             </div>
           </article>
