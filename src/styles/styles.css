@@ -311,6 +311,7 @@ html:not([data-theme]) .icon-sun{display:none}
   aspect-ratio:1;
   object-fit:cover;
   border-radius:24px;
+  max-height:220px;
 }
 
 .card-label{margin:0 0 10px;color:var(--muted);font-size:.92rem}
@@ -846,15 +847,8 @@ body.modal-open{
 }
 
 .project-resource-links a{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:44px;
-  padding:10px 12px;
-  border-radius:999px;
-  background:var(--surface-soft);
   color:var(--text);
-  text-decoration:none;
+  text-underline-offset:4px;
   font-weight:700;
 }
 
@@ -972,8 +966,14 @@ textarea:focus-visible{
     grid-template-columns:1fr;
   }
 
-  .hero-card-profile{grid-template-columns:82px 1fr}
-  .profile-photo{border-radius:18px}
+  .hero-panel{
+    max-width:420px;
+    margin-inline:auto;
+    width:100%;
+  }
+  .hero-card-profile{grid-template-columns:112px 1fr;align-items:center}
+  .profile-photo{border-radius:20px}
+  .metric-grid{grid-template-columns:repeat(2, minmax(0, 1fr))}
   .section h2{font-size:2rem}
   .featured-band-inner{
     border-radius:24px;
@@ -1039,10 +1039,11 @@ textarea:focus-visible{
     font-size:.86rem;
   }
   .hero-card-profile{
-    grid-template-columns:1fr;
+    grid-template-columns:96px 1fr;
   }
   .profile-photo{
-    width:88px;
+    width:96px;
+    max-height:96px;
   }
 }
 

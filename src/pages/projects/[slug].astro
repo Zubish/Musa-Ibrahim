@@ -15,7 +15,7 @@ const { Content } = await render(project);
 const subject = encodeURIComponent(project.data.inquirySubject);
 const projectLinks = [
   project.data.liveUrl && { label: 'View live project', href: project.data.liveUrl },
-  project.data.repoUrl && { label: 'GitHub repository', href: project.data.repoUrl }
+  project.data.repoUrl && { label: 'View GitHub repository', href: project.data.repoUrl }
 ].filter(Boolean);
 ---
 <BaseLayout
@@ -42,20 +42,6 @@ const projectLinks = [
           <ul class="tag-list">
             {project.data.tags.map((tag) => <li>{tag}</li>)}
           </ul>
-          {projectLinks.length > 0 && (
-            <div class="action-row">
-              {projectLinks.map((link, index) => (
-                <a
-                  class={`button ${index === 0 ? 'button-primary' : 'button-secondary'}`}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          )}
         </div>
         <button
           class="case-study-media image-modal-trigger"
