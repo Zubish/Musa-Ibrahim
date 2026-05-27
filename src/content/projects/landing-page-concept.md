@@ -20,7 +20,7 @@ focus: "Hierarchy, responsiveness, and call-to-action clarity"
 status: "Ready for live demo and repository links"
 inquirySubject: "Landing Page Project Inquiry"
 featured: false
-order: 2
+order: 4
 ---
 
 ## The goal

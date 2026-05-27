@@ -19,7 +19,7 @@ focus: "Consistency, feedback states, and product feel"
 status: "Ready for production details and links"
 inquirySubject: "Interface System Project Inquiry"
 featured: false
-order: 3
+order: 5
 ---
 
 ## The goal
