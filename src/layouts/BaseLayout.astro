@@ -40,6 +40,13 @@ const imageUrl = new URL(image, siteUrl).toString();
 </head>
 <body class={bodyClass}>
   <slot />
+  <div class="image-lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Expanded project screenshot" hidden>
+    <button class="image-lightbox-backdrop" type="button" data-modal-close aria-label="Close expanded screenshot"></button>
+    <div class="image-lightbox-panel">
+      <button class="image-lightbox-close" type="button" data-modal-close aria-label="Close expanded screenshot">&times;</button>
+      <img id="image-lightbox-img" src="" alt="">
+    </div>
+  </div>
   <script is:inline src="/script.js"></script>
 </body>
 </html>

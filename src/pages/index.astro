@@ -93,9 +93,15 @@ const personJsonLd = {
 
       {featuredProject && (
         <article class="featured-project">
-          <div class="featured-project-media">
+          <button
+            class="featured-project-media image-modal-trigger"
+            type="button"
+            data-modal-image={featuredProject.data.image}
+            data-modal-alt={featuredProject.data.alt}
+            aria-label={`Open ${featuredProject.data.title} screenshot`}
+          >
             <img src={featuredProject.data.image} alt={featuredProject.data.alt} loading="lazy" decoding="async" width="900" height="620">
-          </div>
+          </button>
           <div class="featured-project-copy">
             <p class="eyebrow">{featuredProject.data.eyebrow}</p>
             <h3>{featuredProject.data.title}</h3>
@@ -113,7 +119,15 @@ const personJsonLd = {
       <div class="projects-grid">
         {projects.map((project) => (
           <article class="project-card">
-            <img class="project-thumbnail" src={project.data.image} alt={project.data.alt} loading="lazy" decoding="async" width="640" height="420">
+            <button
+              class="project-thumbnail-button image-modal-trigger"
+              type="button"
+              data-modal-image={project.data.image}
+              data-modal-alt={project.data.alt}
+              aria-label={`Open ${project.data.title} screenshot`}
+            >
+              <img class="project-thumbnail" src={project.data.image} alt={project.data.alt} loading="lazy" decoding="async" width="640" height="420">
+            </button>
             <div class="project-card-body">
               <p class="project-type">{project.data.type}</p>
               <h3>{project.data.title}</h3>

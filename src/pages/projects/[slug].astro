@@ -39,7 +39,15 @@ const subject = encodeURIComponent(project.data.inquirySubject);
             {project.data.tags.map((tag) => <li>{tag}</li>)}
           </ul>
         </div>
-        <img src={project.data.image} alt={project.data.alt} loading="lazy" decoding="async" width="900" height="620">
+        <button
+          class="case-study-media image-modal-trigger"
+          type="button"
+          data-modal-image={project.data.image}
+          data-modal-alt={project.data.alt}
+          aria-label={`Open ${project.data.title} screenshot`}
+        >
+          <img src={project.data.image} alt={project.data.alt} loading="lazy" decoding="async" width="900" height="620">
+        </button>
       </div>
     </section>
 

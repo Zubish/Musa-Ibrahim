@@ -86,6 +86,54 @@ document.addEventListener('DOMContentLoaded', () => {
     revealItems.forEach((item) => item.classList.add('reveal-visible'));
   }
 
+  (function setupImageLightbox() {
+    const modal = document.getElementById('image-lightbox');
+    const modalImg = document.getElementById('image-lightbox-img');
+    const triggers = Array.from(document.querySelectorAll('[data-modal-image]'));
+    const closeButtons = Array.from(document.querySelectorAll('[data-modal-close]'));
+    let activeTrigger = null;
+
+    if (!modal || !modalImg || !triggers.length) return;
+
+    const closeModal = () => {
+      modal.hidden = true;
+      modalImg.removeAttribute('src');
+      modalImg.setAttribute('alt', '');
+      document.body.classList.remove('modal-open');
+      if (activeTrigger) activeTrigger.focus();
+      activeTrigger = null;
+    };
+
+    const openModal = (trigger) => {
+      const imageSrc = trigger.getAttribute('data-modal-image');
+      if (!imageSrc) return;
+
+      activeTrigger = trigger;
+      modalImg.src = imageSrc;
+      modalImg.alt = trigger.getAttribute('data-modal-alt') || '';
+      modal.hidden = false;
+      document.body.classList.add('modal-open');
+
+      const closeButton = modal.querySelector('.image-lightbox-close');
+      if (closeButton) closeButton.focus();
+    };
+
+    triggers.forEach((trigger) => {
+      trigger.setAttribute('aria-haspopup', 'dialog');
+      trigger.addEventListener('click', () => openModal(trigger));
+    });
+
+    closeButtons.forEach((button) => {
+      button.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !modal.hidden) {
+        closeModal();
+      }
+    });
+  })();
+
   if (header) {
     let lastScroll = window.pageYOffset || document.documentElement.scrollTop;
     let ticking = false;
