@@ -1,12 +1,12 @@
 ---
 title: "Why clarity beats decoration in interface design"
 type: "UI Notes"
-description: "Strong interface design is usually less about adding more and more about helping a user understand what matters first."
-metaDescription: "Writing by Musa Ibrahim about interface clarity."
-theme: "Hierarchy and readability"
+description: "What RxLedger taught me about putting the next pharmacy action close to the data that explains it."
+metaDescription: "Writing by Musa Ibrahim about interface clarity in pharmacy workflow screens."
+theme: "Pharmacy workflow hierarchy"
 order: 1
 ---
 
-Decoration can attract attention, but clarity sustains trust. When a page is easy to scan, headings are purposeful, and actions are obvious, the entire experience feels more professional.
+In RxLedger, clarity means a cashier, pharmacist, or branch manager should not have to hunt for the next action. If a medicine is near expiry, low in stock, or tied to a branch, that context needs to sit close to the action the user can take.
 
-The most effective interfaces usually rely on spacing, contrast, and order before they rely on visual tricks. That discipline makes them easier to use across devices and easier to improve over time.
+That changed how I think about layout. A dashboard is not only a place to display numbers; it is a work surface for decisions like receive stock, dispense by FEFO, review a ledger, or check which staff member posted a movement.

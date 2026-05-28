@@ -1,12 +1,12 @@
 ---
 title: "Accessibility is a trust signal"
 type: "Accessibility"
-description: "Accessible design is not just about compliance. It shapes whether a product feels considerate, stable, and well made."
-metaDescription: "Writing by Musa Ibrahim about accessibility and trust."
-theme: "Inclusive interaction design"
+description: "Why forms, focus states, and readable contrast matter when a product handles stock, payments, reports, or personal details."
+metaDescription: "Writing by Musa Ibrahim about accessibility in workflow-heavy product interfaces."
+theme: "Accessible operational interfaces"
 order: 3
 ---
 
-Clear focus states, readable contrast, logical structure, and predictable forms tell users that care went into the experience. That feeling matters.
+In the kinds of products I am drawn to, accessibility is not separate from the workflow. A cashier using RxLedger, a buyer checking escrow status, or a reporter submitting evidence should be able to move through the interface without guessing what changed.
 
-The more friction disappears, the more likely a user is to trust the product behind the interface. Accessibility supports both usability and brand credibility.
+Readable contrast, visible focus states, predictable form errors, and clear button labels reduce mistakes in moments where the action matters. That is the accessibility standard I want my work to keep improving toward.

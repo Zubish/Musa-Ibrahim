@@ -16,8 +16,8 @@ cardTags:
   - "Inventory"
   - "Healthcare"
 cardDescription: "A pharmacy workspace that combines FEFO inventory, POS checkout, branch controls, staff roles, reports, and audit trails in one operational system."
-role: "Product builder, front-end developer, and UI systems designer"
-focus: "Operational UX, inventory workflows, role-aware interfaces, and trustworthy pharmacy records"
+role: "Software engineering student, Pharmacy Technician, and AI-assisted product builder"
+focus: "Branch inventory, FEFO expiry control, POS workflow, staff roles, audit trails, and pharmacy-integrated systems"
 status: "Active product build with landing page, app shell, serverless API routes, and deployment workflow"
 liveUrl: "https://rxledger.vercel.app"
 repoUrl: "https://github.com/Zubish/RxLedger"
@@ -50,4 +50,4 @@ The design work centers on pharmacy operations: clear branch context, compact da
 
 ## Why this piece matters
 
-RxLedger shows more than page styling. It demonstrates product thinking, domain research, workflow design, and front-end execution for a real operational system. The strongest part of the project is how the interface connects business rules to user actions: expiry control, staff permissions, branch switching, stock movement, and reporting all shape the experience instead of sitting behind it.
+RxLedger is the clearest link between my pharmacy background and my software engineering work. I designed it around the problems I recognize from pharmacy operations: expiry pressure, branch stock visibility, staff accountability, goods receiving, counter sales, and the need for records that can be reviewed later. The interface connects those business rules to user actions instead of treating them as hidden backend details.

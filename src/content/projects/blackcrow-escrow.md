@@ -1,7 +1,7 @@
 ---
 title: "BlackCrow Escrow"
 type: "Escrow fintech"
-eyebrow: "Production-style case study"
+eyebrow: "Escrow workflow case study"
 description: "A social-commerce escrow platform that helps buyers and sellers create protected transaction links, verify access, track delivery, release funds, and manage wallet withdrawals."
 image: "/img/blackcrow-showcase.png"
 alt: "BlackCrow escrow landing page showing protected transaction messaging and trust metrics"
@@ -16,7 +16,7 @@ cardTags:
   - "Fintech"
   - "Trust UX"
 cardDescription: "A transaction-protection app for buyer and seller workflows, with escrow links, OTP tracking, payment boundaries, wallet states, and withdrawal flow design."
-role: "Product builder, front-end developer, and full-stack workflow designer"
+role: "AI-assisted product builder and front-end workflow designer"
 focus: "Trust-building UI, protected transaction flows, payment boundaries, wallet UX, and buyer/seller state clarity"
 status: "Live MVP with static frontend screens, Node API routes, Postgres-ready persistence, and Vercel deployment support"
 liveUrl: "https://black-crow-rosy.vercel.app"
@@ -49,4 +49,4 @@ The strongest interface work is in the state transitions: both parties need to u
 
 ## Why this piece matters
 
-BlackCrow shows how front-end work can support trust in a high-stakes transaction flow. The project is not just a landing page; it includes operational screens, API boundaries, payment thinking, and user states that make the product feel more credible for real buyer/seller use.
+BlackCrow matters because escrow is mostly a state-clarity problem for the interface. The buyer and seller need to know who has accepted terms, whether payment has been initialized, when funds are protected, what happens after delivery, and how payout moves into a wallet or bank withdrawal flow. I used the project to practice making financial actions readable without hiding the risk behind decorative landing-page copy.

@@ -1,7 +1,7 @@
 ---
 title: "VisionEcho Live"
 type: "Civic news platform"
-eyebrow: "Production-style case study"
+eyebrow: "Civic reporting workflow case study"
 description: "A Nigerian civic newsroom app for eyewitness reports, live field evidence, reporter workflows, editor verification, comments, sharing, and mobile-first public-interest reporting."
 image: "/img/visionecho-showcase.png"
 alt: "VisionEcho Live landing page showing civic newsroom headline and verification features"
@@ -16,7 +16,7 @@ cardTags:
   - "Verification"
   - "PWA"
 cardDescription: "A civic reporting platform with live feed filters, role-based dashboards, KYC review, editor queues, field evidence capture, comments, and shareable report pages."
-role: "Product builder, front-end developer, and full-stack application designer"
+role: "AI-assisted product builder and front-end application designer"
 focus: "Civic reporting UX, role-aware dashboards, verification flows, mobile field capture, and public-interest information design"
 status: "Live full-stack build with Next.js, API routes, PWA support, local seed data, and Neon/Postgres production persistence"
 liveUrl: "https://vision-echo.vercel.app"
@@ -46,8 +46,8 @@ The project is available on GitHub at [Zubish/vision-echo](https://github.com/Zu
 
 The active product build is a Next.js app with API routes, TypeScript models, validation, seed data, and database logic that can run locally or against Neon/Postgres. The interface balances public newsroom browsing with authenticated workflows for reporting, editing, role management, and verification.
 
-The product challenge is trust. The UI has to distinguish raw eyewitness material from verified stories, while still making contribution fast enough for mobile users in the field.
+The product challenge is separating raw eyewitness material from verified civic stories without slowing down mobile contribution. The interface has to make source roles, review status, field evidence, and editor actions visible enough that users understand what they are reading or submitting.
 
 ## Why this piece matters
 
-VisionEcho shows product thinking across public content, authenticated dashboards, role permissions, verification states, and mobile capture. It is a strong portfolio piece because it connects civic purpose with practical interface systems: feed filtering, evidence handling, editor review, source roles, and public sharing all work together.
+VisionEcho matters because it forced me to design beyond a public feed. The product needs role-specific dashboards, reporter verification, editor review, evidence capture, comments, and shareable report pages to work together. I used the build to practice civic UX where speed, source clarity, and moderation are part of the product experience.
