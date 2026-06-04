@@ -33,6 +33,9 @@ const writing = defineCollection({
     description: z.string(),
     metaDescription: z.string(),
     theme: z.string(),
+    image: z.string(),
+    alt: z.string(),
+    readTime: z.string(),
     order: z.number().int().nonnegative().default(0)
   })
 });

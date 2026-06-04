@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('writing')).sort((a, b) => a.data.order - b.data.order);
+
+const topicIdeas = [
+  'HealthTech digitization for community pharmacies',
+  'FEFO inventory and why expiry logic needs better interfaces',
+  'Escrow UX patterns for safer buyer-seller transactions',
+  'FinTech trust signals: labels, states, confirmations, and errors',
+  'Rental marketplace flows: bookings, deposits, returns, and disputes',
+  'Civic reporting interfaces for evidence, verification, and public trust',
+  'Frontend state management for workflow-heavy products',
+  'Why accessibility is a business requirement in operational software',
+  'React, Next.js, Astro, and choosing the right framework for the job',
+  'How AI-assisted development improves product thinking when used carefully'
+];
+---
+<BaseLayout
+  title="Writing | Musa Ibrahim"
+  description="Writing by Musa Ibrahim on HealthTech, FinTech UX, frontend engineering, marketplace workflows, civic tech, and AI-assisted software development."
+  htmlClass="article-page"
+  bodyClass="article-page"
+>
+  <header class="subpage-header">
+    <div class="container subpage-nav">
+      <a href="/">&larr; Back to portfolio</a>
+      <a href="mailto:musabish98@gmail.com?subject=Writing%20and%20Frontend%20Work">Discuss an article</a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="article-hero writing-index-hero">
+      <p class="eyebrow">Writing</p>
+      <h1>Notes on frontend engineering, product trust, and workflow software.</h1>
+      <p>These articles connect my project work to the product problems I want to keep solving: pharmacy digitization, escrow confidence, rental flows, civic reporting, accessibility, and framework decisions.</p>
+    </section>
+
+    <section class="section writing-index-section">
+      <div class="writing-grid writing-grid-large">
+        {articles.map((article) => (
+          <article class="writing-card">
+            <a class="writing-media" href={`/writing/${article.id}`} aria-label={`Read ${article.data.title}`}>
+              <img src={article.data.image} alt={article.data.alt} loading={article.data.order <= 2 ? 'eager' : 'lazy'} decoding="async" width="640" height="420">
+            </a>
+            <p class="writing-type">{article.data.type}</p>
+            <h2><a href={`/writing/${article.id}`}>{article.data.title}</a></h2>
+            <p>{article.data.description}</p>
+            <span class="read-time">{article.data.readTime}</span>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section writing-topics-section">
+      <div class="section-heading">
+        <p class="eyebrow">Topic roadmap</p>
+        <h2>Ideas worth developing into deeper posts</h2>
+        <p>This gives the writing section a clear editorial direction instead of random portfolio notes.</p>
+      </div>
+      <div class="topic-grid">
+        {topicIdeas.map((topic) => <div class="topic-pill">{topic}</div>)}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

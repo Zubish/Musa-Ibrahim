@@ -12,7 +12,7 @@ const personJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Musa Ibrahim',
-  jobTitle: 'Frontend Developer Intern Candidate',
+  jobTitle: 'Frontend Developer Intern',
   url: 'https://musa-ibrahim-lac.vercel.app/',
   sameAs: [
     'https://github.com/Zubish',
@@ -30,7 +30,7 @@ const personJsonLd = {
       <div class="hero-backdrop" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Frontend intern candidate / HealthTech builder</p>
+          <p class="eyebrow">Frontend intern / HealthTech builder</p>
           <h1>I build workflow-heavy web apps that turn product rules into usable screens.</h1>
           <p class="hero-summary">I am looking for frontend, software engineering, and product-focused internships where I can contribute to shipped interfaces. My work combines React, TypeScript, Next.js, Astro, accessibility-minded UI, AI-assisted development, and pharmacy operations context.</p>
           <div class="hero-cta-row">
@@ -150,12 +150,12 @@ const personJsonLd = {
         <div>
           <p class="eyebrow">About me</p>
           <h2>I bring software engineering training and pharmacy operations context into product work.</h2>
-          <p>I am currently in 400-level Software Engineering at Miva Open University, and I am positioning for frontend and software engineering internship roles. I want recruiters to see an intern candidate who can reason through product flows, write frontend code, test CTAs, and explain design decisions through user pain points.</p>
+          <p>I am currently in 400-level Software Engineering at Miva Open University, and I am positioning for frontend and software engineering internship roles. I want recruiters to see a frontend intern who can reason through product flows, write frontend code, test CTAs, and explain design decisions through user pain points.</p>
           <p>As a Pharmacy Technician, I notice operational details many junior builders miss: expiry pressure, branch stock visibility, staff handover, payment confidence, identity checks, and the small interface decisions that can slow down real work. I use AI as a coding assistant and prompt engineering partner to move faster, compare ideas, and refine implementation without skipping judgment.</p>
         </div>
         <div class="about-callout">
           <p class="callout-title">Positioning headline</p>
-          <p>Frontend developer intern candidate focused on HealthTech, trusted marketplaces, workflow UX, and role-aware product interfaces.</p>
+          <p>Frontend developer intern focused on HealthTech, trusted marketplaces, workflow UX, and role-aware product interfaces.</p>
           <p class="callout-title">Currently open to</p>
           <p>Frontend internships, software engineering internships, HealthTech collaborations, and product teams that value domain-aware builders.</p>
         </div>
@@ -264,17 +264,24 @@ const personJsonLd = {
     <section id="writing" class="section container reveal">
       <div class="section-heading">
         <p class="eyebrow">Writing</p>
-        <h2>Working notes from building and refining product interfaces</h2>
-        <p>These notes connect my portfolio decisions to the problems I keep meeting in real builds: mobile order, accessibility, specific copy, and workflows that need less friction.</p>
+        <h2>Engineering notes around the domains I build for</h2>
+        <p>Short essays on HealthTech, escrow UX, marketplace state design, civic reporting, and the frontend decisions behind trustworthy software.</p>
       </div>
       <div class="writing-grid">
-        {articles.map((article) => (
+        {articles.slice(0, 3).map((article) => (
           <article class="writing-card">
+            <a class="writing-media" href={`/writing/${article.id}`} aria-label={`Read ${article.data.title}`}>
+              <img src={article.data.image} alt={article.data.alt} loading="lazy" decoding="async" width="640" height="420">
+            </a>
             <p class="writing-type">{article.data.type}</p>
             <h3><a href={`/writing/${article.id}`}>{article.data.title}</a></h3>
             <p>{article.data.description}</p>
+            <span class="read-time">{article.data.readTime}</span>
           </article>
         ))}
+      </div>
+      <div class="section-action">
+        <a class="project-cta-link" href="/writing/">See more writing</a>
       </div>
     </section>
 
