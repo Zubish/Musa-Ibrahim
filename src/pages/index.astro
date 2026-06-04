@@ -12,7 +12,7 @@ const personJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Musa Ibrahim',
-  jobTitle: 'Software Engineering Student and Front-end Developer',
+  jobTitle: 'Frontend Developer Intern Candidate',
   url: 'https://musa-ibrahim-lac.vercel.app/',
   sameAs: [
     'https://github.com/Zubish',
@@ -30,17 +30,17 @@ const personJsonLd = {
       <div class="hero-backdrop" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">400-level software engineering student / Pharmacy Technician / AI-assisted product builder</p>
-          <h1>I build practical product interfaces for workflows that need structure, speed, and trust.</h1>
-          <p class="hero-summary">I'm a 400-level Software Engineering student at Miva Open University and a Pharmacy Technician. I use AI-assisted development and prompt engineering to turn product ideas into working front-end experiences, with a strong interest in HealthTech, pharmacy workflow, and pharmacy-integrated systems.</p>
+          <p class="eyebrow">Frontend intern candidate / HealthTech builder</p>
+          <h1>I build workflow-heavy web apps that turn product rules into usable screens.</h1>
+          <p class="hero-summary">I am looking for frontend, software engineering, and product-focused internships where I can contribute to shipped interfaces. My work combines React, TypeScript, Next.js, Astro, accessibility-minded UI, AI-assisted development, and pharmacy operations context.</p>
           <div class="hero-cta-row">
             <a class="button button-primary" href="#work">Explore my work</a>
             <a class="button button-secondary" href="#contact">Start a conversation</a>
             <a class="button button-ghost" href="mailto:musabish98@gmail.com?subject=Resume%20Request">Request my resume</a>
           </div>
           <ul class="hero-highlights">
-            <li>HealthTech and pharmacy operations UX</li>
-            <li>AI-assisted front-end development</li>
+            <li>Frontend internship-ready case studies</li>
+            <li>React, TypeScript, Next.js, Astro, and Vite</li>
             <li>Prompt engineering for product and code workflows</li>
           </ul>
         </div>
@@ -50,7 +50,7 @@ const personJsonLd = {
             <img src="/img/Professional%20photo%20me.jpg" alt="Portrait of Musa Ibrahim" class="profile-photo" loading="eager" decoding="async" width="220" height="220">
             <div>
               <p class="card-label">Currently focused on</p>
-              <p class="card-strong">HealthTech tools, pharmacy workflow systems, and front-end products that make complex actions easier to complete.</p>
+              <p class="card-strong">Frontend internships, HealthTech tools, trusted marketplaces, and product interfaces with real user roles.</p>
             </div>
           </div>
           <div class="hero-card hero-card-metric">
@@ -58,19 +58,19 @@ const personJsonLd = {
             <div class="metric-grid">
               <div>
                 <span class="metric-number">{projects.length}</span>
-                <span class="metric-label">real product builds</span>
+                <span class="metric-label">case studies</span>
               </div>
               <div>
                 <span class="metric-number">{articles.length}</span>
                 <span class="metric-label">working notes</span>
               </div>
               <div>
-                <span class="metric-number">1</span>
-                <span class="metric-label">HealthTech focus</span>
+                <span class="metric-number">{projects.length}</span>
+                <span class="metric-label">live project links</span>
               </div>
               <div>
-                <span class="metric-number">AI</span>
-                <span class="metric-label">assisted workflow</span>
+                <span class="metric-number">Intern</span>
+                <span class="metric-label">positioning</span>
               </div>
             </div>
           </div>
@@ -80,16 +80,16 @@ const personJsonLd = {
 
     <section class="featured-band reveal">
       <div class="container featured-band-inner">
-        <p class="featured-band-title">Featured HealthTech build</p>
-        <p class="featured-band-copy">RxLedger connects my pharmacy background with my software engineering work: branch inventory, expiry-aware stock control, POS flow, staff roles, and audit-ready pharmacy records.</p>
+        <p class="featured-band-title">Featured HealthTech case study</p>
+        <p class="featured-band-copy">RxLedger shows the clearest match between my pharmacy background and frontend engineering: branch inventory, FEFO expiry control, POS flow, staff permissions, and audit-ready records.</p>
       </div>
     </section>
 
     <section id="work" class="section container reveal">
       <div class="section-heading">
         <p class="eyebrow">Selected work</p>
-        <h2>Three real builds shaped around workflow, roles, and decision points</h2>
-        <p>RxLedger, BlackCrow, and VisionEcho show how I approach interfaces where users have to track stock, protect transactions, verify reports, or move through multi-step product flows without losing context.</p>
+        <h2>Four deployed projects built around workflows recruiters can inspect</h2>
+        <p>RxLedger, BlackCrow, i-Go-rent, and VisionEcho show how I handle inventory, escrow, rental booking, verification, role-based dashboards, and mobile-first product flows.</p>
       </div>
 
       {featuredProject && (
@@ -111,7 +111,7 @@ const personJsonLd = {
               {featuredProject.data.tags.map((tag) => <li>{tag}</li>)}
             </ul>
             <div class="action-row">
-              <a class="button button-primary" href={`/projects/${featuredProject.id}`}>Read case study</a>
+              <a class="project-cta-link" href={`/projects/${featuredProject.id}`}>Read case study</a>
             </div>
           </div>
         </article>
@@ -137,7 +137,7 @@ const personJsonLd = {
                 {project.data.cardTags.map((tag) => <li>{tag}</li>)}
               </ul>
               <div class="card-links">
-                <a href={`/projects/${project.id}`}>Case study</a>
+                <a class="project-cta-link" href={`/projects/${project.id}`}>Read case study</a>
               </div>
             </div>
           </article>
@@ -149,15 +149,15 @@ const personJsonLd = {
       <div class="split-panel">
         <div>
           <p class="eyebrow">About me</p>
-          <h2>I build from two worlds: software engineering and pharmacy operations.</h2>
-          <p>I'm a 400-level Software Engineering student at Miva Open University, and I also work from the practical eye of a Pharmacy Technician. That background makes me notice inventory pressure, expiry dates, handover gaps, staff roles, and the small interface decisions that can slow down a real counter workflow.</p>
-          <p>I use AI as a coding assistant, product thinking partner, and prompt engineering tool to move faster without skipping judgment. My strongest interest is HealthTech, especially pharmacy workflow, pharmacy-integrated systems, and operational products where the interface has to support real daily work.</p>
+          <h2>I bring software engineering training and pharmacy operations context into product work.</h2>
+          <p>I am currently in 400-level Software Engineering at Miva Open University, and I am positioning for frontend and software engineering internship roles. I want recruiters to see an intern candidate who can reason through product flows, write frontend code, test CTAs, and explain design decisions through user pain points.</p>
+          <p>As a Pharmacy Technician, I notice operational details many junior builders miss: expiry pressure, branch stock visibility, staff handover, payment confidence, identity checks, and the small interface decisions that can slow down real work. I use AI as a coding assistant and prompt engineering partner to move faster, compare ideas, and refine implementation without skipping judgment.</p>
         </div>
         <div class="about-callout">
           <p class="callout-title">Positioning headline</p>
-          <p>Software engineering student and AI-assisted front-end builder focused on HealthTech, pharmacy workflow, and role-aware product interfaces.</p>
+          <p>Frontend developer intern candidate focused on HealthTech, trusted marketplaces, workflow UX, and role-aware product interfaces.</p>
           <p class="callout-title">Currently open to</p>
-          <p>Internships, HealthTech collaborations, pharmacy software projects, front-end roles, and product teams that value domain-aware builders.</p>
+          <p>Frontend internships, software engineering internships, HealthTech collaborations, and product teams that value domain-aware builders.</p>
         </div>
       </div>
     </section>
@@ -165,7 +165,7 @@ const personJsonLd = {
     <section id="skills" class="section container reveal">
       <div class="section-heading">
         <p class="eyebrow">Skills and tools</p>
-        <h2>The stack I use to turn domain problems into usable screens</h2>
+        <h2>The stack I use to turn product requirements into usable screens</h2>
       </div>
       <div class="skills-grid">
         <article class="info-card">
@@ -173,15 +173,15 @@ const personJsonLd = {
           <ul class="plain-list">
             <li>Semantic HTML</li>
             <li>Responsive CSS layouts</li>
-            <li>Vanilla JavaScript interactions</li>
-            <li>Accessibility-minded structure</li>
+            <li>React, TypeScript, and Next.js</li>
+            <li>Astro, Vite, and deployable static pages</li>
           </ul>
         </article>
         <article class="info-card">
           <h3>Product and domain thinking</h3>
           <ul class="plain-list">
             <li>Pharmacy workflow mapping</li>
-            <li>Inventory and expiry logic</li>
+            <li>Inventory, escrow, and verification flows</li>
             <li>Role-aware user journeys</li>
             <li>Operational dashboard planning</li>
           </ul>
@@ -191,7 +191,7 @@ const personJsonLd = {
           <ul class="plain-list">
             <li>Prompt engineering</li>
             <li>AI-assisted code iteration</li>
-            <li>Interface critique and refinement</li>
+            <li>CTA, copy, and interface critique</li>
             <li>Testing ideas against real user flows</li>
           </ul>
         </article>
@@ -201,20 +201,20 @@ const personJsonLd = {
     <section class="section container reveal">
       <div class="section-heading">
         <p class="eyebrow">What I bring</p>
-        <h2>A builder profile shaped by code, prompts, and pharmacy context</h2>
+        <h2>Why this portfolio should matter to recruiters</h2>
       </div>
       <div class="trust-grid">
         <article class="info-card">
           <h3>Domain awareness</h3>
-          <p>My pharmacy background helps me design around branch stock, expiry risk, POS handoff, staff permissions, and the pressure of fast service environments.</p>
+          <p>RxLedger proves I can connect a real domain to product screens: pharmacy stock, expiry risk, POS handoff, staff permissions, and branch-level reporting.</p>
         </article>
         <article class="info-card">
-          <h3>Prompt engineering</h3>
-          <p>I use prompts to clarify product flows, compare interface options, generate implementation paths, and review code decisions before they reach the screen.</p>
+          <h3>Internship-ready proof</h3>
+          <p>Each project links to a live deployment and GitHub repository, so recruiters can inspect the interface, code direction, routing, and implementation scope.</p>
         </article>
         <article class="info-card">
-          <h3>Recruiter-ready proof</h3>
-          <p>The portfolio links to live projects and repositories, so recruiters can inspect the product, read the case study, and review the implementation trail.</p>
+          <h3>AI-assisted execution</h3>
+          <p>I use prompt engineering to clarify requirements, compare product flows, review edge cases, and turn rough ideas into testable frontend builds.</p>
         </article>
       </div>
     </section>
@@ -222,17 +222,17 @@ const personJsonLd = {
     <section class="section container reveal" aria-labelledby="testimonials-title">
       <div class="section-heading">
         <p class="eyebrow">Collaboration fit</p>
-        <h2 id="testimonials-title">How I show up on a product team</h2>
-        <p>I work best where product details matter: the screen has a job, the data has rules, and the user needs fewer guesses between one action and the next.</p>
+        <h2 id="testimonials-title">How I would contribute as an intern</h2>
+        <p>I work best where the interface has a real job: a user needs to book, verify, pay, report, dispense, review, or hand something off without guessing.</p>
       </div>
       <div class="testimonials-grid">
         <article class="quote-card">
           <h3>Clear product reasoning</h3>
-          <p>I explain interface decisions through the user task: what a cashier, pharmacist, buyer, seller, reporter, editor, or recruiter needs to understand next.</p>
+          <p>I explain interface decisions through user tasks: what a pharmacist, cashier, buyer, seller, renter, vendor, reporter, editor, or recruiter needs to understand next.</p>
         </article>
         <article class="quote-card">
           <h3>Fast, careful iteration</h3>
-          <p>I use AI to move quickly through options, then slow down on the parts that need human judgment: wording, hierarchy, edge cases, mobile behavior, and accessibility.</p>
+          <p>I use AI to move quickly through options, then slow down on the parts that need human judgment: wording, hierarchy, edge cases, mobile behavior, accessibility, and CTA clarity.</p>
         </article>
       </div>
     </section>
@@ -282,8 +282,8 @@ const personJsonLd = {
       <div class="contact-shell">
         <div class="contact-copy">
           <p class="eyebrow">Contact</p>
-          <h2>Have a HealthTech, front-end, or product workflow opportunity?</h2>
-          <p>I'm open to internships, collaborations, freelance builds, and product teams where my software engineering training, pharmacy background, and AI-assisted workflow can be useful.</p>
+          <h2>Have a frontend internship, HealthTech, or product workflow opportunity?</h2>
+          <p>I'm open to frontend internships, software engineering internships, HealthTech collaborations, and product teams where my pharmacy background and AI-assisted workflow can be useful.</p>
           <div class="contact-links">
             <a href="mailto:musabish98@gmail.com">musabish98@gmail.com</a>
             <a href="https://github.com/Zubish" target="_blank" rel="noopener noreferrer">GitHub</a>
