@@ -16,7 +16,7 @@ cardTags:
   - "Inventory"
   - "Healthcare"
 cardDescription: "A pharmacy workspace for inventory, FEFO expiry control, POS checkout, staff roles, and audit trails."
-role: "Frontend developer intern, Pharmacy Technician, and AI-assisted product builder"
+role: "Frontend developer, Pharmacy Technician, and AI-assisted product builder"
 focus: "Pharmacy inventory UX, FEFO expiry control, POS checkout, staff permissions, patient history, reports, and audit trails"
 status: "Live product build with landing page, authenticated app shell, serverless API routes, and Vercel deployment workflow"
 liveUrl: "https://rxledger.vercel.app"
@@ -63,4 +63,4 @@ The frontend challenge is information density. I designed around clear branch co
 
 ## Why this piece matters
 
-RxLedger gives recruiters the clearest proof of my direction: I can translate domain knowledge into product requirements, then into frontend screens. It shows how I think through real operational pressure, not just visual presentation.
+RxLedger gives recruiters the clearest proof of my direction: I can take pharmacy knowledge, turn it into a usable product flow, and build the frontend around the work people actually do. It shows how I think through real operational pressure, not just visual presentation.

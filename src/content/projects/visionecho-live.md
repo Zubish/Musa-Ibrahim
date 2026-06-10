@@ -16,7 +16,7 @@ cardTags:
   - "Verification"
   - "PWA"
 cardDescription: "A civic reporting platform with live feeds, role dashboards, KYC review, editor queues, evidence capture, and shareable reports."
-role: "Frontend developer intern and AI-assisted application designer"
+role: "Frontend developer and AI-assisted application designer"
 focus: "Civic reporting UX, reporter verification, editor review, role-aware dashboards, mobile field capture, and PWA access"
 status: "Live full-stack build with Next.js, API routes, PWA support, local seed data, and Neon/Postgres persistence"
 liveUrl: "https://vision-echo.vercel.app"

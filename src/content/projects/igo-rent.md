@@ -16,7 +16,7 @@ cardTags:
   - "Escrow"
   - "Verification"
 cardDescription: "A Lagos rental marketplace with verified listings, booking flow, deposits, escrow states, reviews, and logistics options."
-role: "Frontend developer intern and AI-assisted marketplace builder"
+role: "Frontend developer and AI-assisted marketplace builder"
 focus: "Marketplace UX, rental booking, virtual escrow, host verification, deposits, dispute handling, logistics, and trust signals"
 status: "Live Next.js production build connected to GitHub and Vercel, with database-backed marketplace flows"
 liveUrl: "https://i-go-rent-72cn.vercel.app"

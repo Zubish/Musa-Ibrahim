@@ -16,7 +16,7 @@ cardTags:
   - "Fintech"
   - "Trust UX"
 cardDescription: "A buyer-seller escrow app with protected links, OTP access, wallet states, delivery tracking, and fund release."
-role: "Frontend developer intern and AI-assisted workflow designer"
+role: "Frontend developer and AI-assisted workflow designer"
 focus: "Escrow UX, buyer/seller state clarity, payment boundaries, guest access, wallet movement, and withdrawal requests"
 status: "Live MVP with static frontend screens, Node API routes, Neon/Postgres persistence, and Vercel deployment support"
 liveUrl: "https://black-crow-rosy.vercel.app"

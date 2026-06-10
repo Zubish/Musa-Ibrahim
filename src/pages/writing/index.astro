@@ -3,19 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 const articles = (await getCollection('writing')).sort((a, b) => a.data.order - b.data.order);
-
-const topicIdeas = [
-  'HealthTech digitization for community pharmacies',
-  'FEFO inventory and why expiry logic needs better interfaces',
-  'Escrow UX patterns for safer buyer-seller transactions',
-  'FinTech trust signals: labels, states, confirmations, and errors',
-  'Rental marketplace flows: bookings, deposits, returns, and disputes',
-  'Civic reporting interfaces for evidence, verification, and public trust',
-  'Frontend state management for workflow-heavy products',
-  'Why accessibility is a business requirement in operational software',
-  'React, Next.js, Astro, and choosing the right framework for the job',
-  'How AI-assisted development improves product thinking when used carefully'
-];
 ---
 <BaseLayout
   title="Writing | Musa Ibrahim"
@@ -37,7 +24,12 @@ const topicIdeas = [
     </section>
 
     <section class="section writing-index-section">
-      <div class="writing-grid writing-grid-large">
+      <div class="section-heading">
+        <p class="eyebrow">Published notes</p>
+        <h2>Writing shaped by the projects I build</h2>
+        <p>Each article connects a product problem to the interface decisions that make software clearer, safer, or easier to trust.</p>
+      </div>
+      <div class="writing-grid writing-grid-large writing-index-grid">
         {articles.map((article) => (
           <article class="writing-card">
             <a class="writing-media" href={`/writing/${article.id}`} aria-label={`Read ${article.data.title}`}>
@@ -49,17 +41,6 @@ const topicIdeas = [
             <span class="read-time">{article.data.readTime}</span>
           </article>
         ))}
-      </div>
-    </section>
-
-    <section class="section writing-topics-section">
-      <div class="section-heading">
-        <p class="eyebrow">Topic roadmap</p>
-        <h2>Ideas worth developing into deeper posts</h2>
-        <p>This gives the writing section a clear editorial direction instead of random portfolio notes.</p>
-      </div>
-      <div class="topic-grid">
-        {topicIdeas.map((topic) => <div class="topic-pill">{topic}</div>)}
       </div>
     </section>
   </main>
